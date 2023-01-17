@@ -14,7 +14,8 @@ footer, header{
 }
 #mcs-logo{
     background-color: transparent;
-    margin-left: 20px; 
+    margin-left: 20px;
+    width: 15%; 
 }
 .nav-link:hover, .nav-link:active{
     text-decoration-line: underline;

@@ -5,6 +5,7 @@ img{
     left: 0px;
     top: 142px; */
     background-color: white;
+    width: 110%;
 }
 
 #notification-banner{
@@ -51,4 +52,19 @@ img{
 }
 #username{
     margin-top: 10px;
+}
+#cse-dept-heading{
+    text-align: center;
+    color:  #03A08D;
+}
+.cse-stats{
+    text-align: center;
+    border: 2px #03A08D solid;
+    /* height: 200px; */
+    width: 400px;
+    margin: 2px;
+    align-content: center;
+}
+.row{
+    align-content: center;
 }
