@@ -12,9 +12,9 @@
 <body>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-sm p-4">
-            <img id="mcs-logo" src="">
+            <img id="mcs-logo" src="img-icon/MCS-logo.png">
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="" class="nav-link">Home</a>
                     </li>
@@ -32,11 +32,29 @@
             <button class="btn navbar-btn mx-5">Login</button>
         </nav>
     </header>
-    <div class="container-fluid" id="dept-pic">
-        <img src="img-icon/CSEDept.jpg">
+    <div class="container-fluid dept-pic">
+        <img class="img-fluid" alt="Responsive image" src="img-icon/CSEDept.jpg">
     </div>
     <div class="container-fluid">
         <p id="notification-banner">Lorem ipsmolestias doloribus adipisci, minima voluptatem asperiores corporis maxime in molestiae inventore distinctio recusandae quae vel porro!</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="about-us">
+            <div class="col-sm-7">
+                <h3 class="about-us-heading">About Military College of Signals</h3>
+                <p id="about-us-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste amet vitae ex unde velit exercitationem facilis dolor saepe beatae repudiandae. Sint quibusdam ipsam non nam aspernatur unde? Commodi, quis maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, architecto! Minus labore maxime expedita explicabo minima repudiandae dignissimos, aspernatur dolores. Quam dicta eligendi qui provident fuga quod similique. Dolorum, soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima, reprehenderit officia molestiae, perspiciatis blanditiis saepe quibusdam fugiat non beatae repudiandae sint ratione sit architecto eius voluptatum, error neque ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis temporibus eos, perspiciatis ad consectetur molestiae maxime unde saepe quaerat quae debitis eveniet ipsum, in dignissimos provident. Dolorem, tempore illum!</p>
+            </div>
+            <div class="col-sm-5" id="login">
+                <h3 class="about-us-heading">Log in to CSE Dashboard</h3>
+                <div class="container" id="login-inner-div">
+                    <input class="login-fields" id="username" type="text" placeholder="Username">
+                    <br>
+                    <input class="login-fields" id="password" type="password" placeholder="Password">
+                    <br>
+                    <button class="btn login-fields" id="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="container-fluid">
         <div class="row footer">
@@ -50,9 +68,10 @@
             </div>
             <div class="col-sm-2">
                 <ul class="ms-auto list-unstyled" id="quick-link-list">
-                    <li id="footer-list-head">Quick Link</li>
-                    <li>Help</li>
-                    <li>About Us</li>
+                    <li id="footer-list-head">Quick Links</li>
+                    <a href="" class="footer-link">Help</a>
+                    <br>
+                    <a href="" class="footer-link">About Us</a>
                 </ul>
             </div>
             <div class="col-sm-7">

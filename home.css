@@ -11,3 +11,44 @@ img{
     background-color: red;
     color: white;
 }
+#about-us{
+    padding: 40px 70px;
+    padding: 40px 25px 40px 70px;
+}
+
+.about-us-heading{
+    text-align: center;
+    color:  #03A08D;
+}
+#about-us-text{
+    text-align: justify;
+    margin-top: 15px;
+}
+#login{
+    padding-left: 50px;
+}
+#login-inner-div{
+    padding: 20px;
+    margin-top: 20px;
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    background: linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%);
+}
+#submit-btn{
+    display: block;
+    font-size: medium;
+    padding: 3px 10px;
+    margin-left: 140px !important;
+}
+#submit-btn:hover{
+    color: white;
+}
+.login-fields{
+    /* text-align: center; */
+    margin: auto;
+    display: block;
+}
+#username{
+    margin-top: 10px;
+}
