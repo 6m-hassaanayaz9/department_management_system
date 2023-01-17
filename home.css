@@ -1,0 +1,13 @@
+img{
+    /* position: absolute; */
+    /* width: 2560px;
+    height: 510px;
+    left: 0px;
+    top: 142px; */
+    background-color: white;
+}
+
+#notification-banner{
+    background-color: red;
+    color: white;
+}
