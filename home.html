@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="home.css">
-    <title>CSE Dept Dashboard</title>
+    <title>MCS Home</title>
 </head>
 <body>
     <header class="container-fluid">
@@ -16,16 +16,16 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Home</a>
+                        <a href="home.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Faculty</a>
+                        <a href="faculty.html" class="nav-link">Faculty</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">About Us</a>
+                        <a href="#about-us" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Contact Us</a>
+                        <a href="#contact-us" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -46,12 +46,22 @@
             </div>
             <div class="col-sm-5" id="login">
                 <h3 class="about-us-heading">Log in to CSE Dashboard</h3>
-                <div class="container" id="login-inner-div">
-                    <input class="login-fields" id="username" type="text" placeholder="Username">
-                    <br>
-                    <input class="login-fields" id="password" type="password" placeholder="Password">
-                    <br>
-                    <button class="btn login-fields" id="submit-btn">Submit</button>
+                <div class="container-fluid m-3">
+                    <form name="loginForm">
+                        <div class="loginPortal container-fluid d-flex flex-column align-items-center w-75 py-3">
+                            <div class="p-2 d-flex flex-column">
+                                <label for="username" id="login-username">Username</label>
+                                <input type="text field" name="username">
+                                <div id="usernameErr"></div>
+                            </div>
+                            <div class="p-2 d-flex flex-column">
+                                <label for="password">Password</label>
+                                <input type="password" name="password">
+                                <div id="passwordErr"></div>
+                            </div>
+                            <input class="py-1 px-3 btn" id="submit-btn" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -80,7 +90,7 @@
         </div>
     </div>
     <footer class="container-fluid">
-        <div class="row footer">
+        <div class="row footer" id="contact-us">
             <div class="col-sm-3">
                 <ul class="ms-auto list-unstyled" id="contact-us-list">
                     <li id="footer-list-head">Contact Us</li>
