@@ -45,11 +45,10 @@
 }
 .cse-stats{
     text-align: center;
-    border: 2px #03A08D solid;
-    /* height: 200px; */
-    width: 400px;
+    border: 1px black solid;
     margin: 2px;
     align-content: center;
+    border-radius: 10px;
 }
 .row{
     align-content: center;
@@ -67,4 +66,18 @@
 }
 #login-username{
     padding-top: 10px;
+}
+#cse-stats-div{
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.cse-stats-imgs{
+    width: 38%;
+    padding-top: 30px;
+}
+.cse-stats-text{
+    padding-top: 15px;
+    padding-bottom: 25px;
 }
