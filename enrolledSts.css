@@ -1,0 +1,70 @@
+#heading{
+    color: #03A08D;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family:'Poppins', sans-serif;
+
+}
+#outer_div{
+    display: flex;
+}
+#left_div{
+    margin-top: 50px;
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 70px; 
+
+}
+#right_div{
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    width: 600px;
+    height: 412px;
+    margin-top: 50px;
+    margin-bottom: 70px; 
+
+}
+#default{
+    background-color: #00d1b8;
+    color: white;    
+}
+.course{
+    
+    border-width: 0.1px ;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    margin-left: 200px;
+    margin-bottom: 7px;
+    font-weight: bold;
+   
+
+}
+
+
+.butn{
+    padding: 20px;
+    border-radius: 5px;
+    padding-right: 45px;
+    padding-left: 45px;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.butn:hover{
+    background-color: #00d1b8;
+    color: white;
+}
+
+
