@@ -70,6 +70,8 @@ footer, header{
 }
 .dept-pic{
     display: flex;
+ 
+    width: 100%;
 }
 img{
     background-color: white;
