@@ -40,6 +40,7 @@ body{
     margin-left: 80px;
     margin-bottom: 7px;
     font-weight: bold;
+    border-width: 2px;
 }
 .info1{
     font-family:'Poppins', sans-serif;
