@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="enrolledSts.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>CSE Dept Dashboard</title>
 </head>
 <body>
@@ -42,38 +43,38 @@
     <h5 id="heading">STUDENTS ENROLLED BT COURSES</h1>
     <div id="outer_div">
         <div id="left_div">
-            <div id="default" class="course">
-                <p>Semester 1</p>
-            </div>
-            <div class="course">
-                <p>Semester 2</p>
-            </div>
-            <div class="course">
-                <p>Semester 3</p>
-            </div>
-            <div class="course">
-                <p>Semester 4</p>
-            </div>
-            <div class="course">
-                <p>Semester 5</p>
-            </div>
-            <div class="course">
-                <p>Semester 6</p>
-            </div>
-            <div class="course">
-                <p>Semester 7</p>
-            </div>
-            <div class="course">
-                <p>Semester 8</p>
-            </div>
+            <button id="default" class="course">
+                Semester 1
+            </button>
+            <button id="sem_2" class="course">
+                Semester 2
+            </button>
+            <button id="sem_3" class="course">
+                Semester 3
+            </button>
+            <button id="sem_4" class="course">
+                Semester 4
+            </button>
+            <button id="sem_5" class="course">
+                Semester 5
+            </button>
+            <button id="sem_6" class="course">
+                Semester 6
+            </button>
+            <button id="sem_7" class="course">
+                Semester 7
+            </button>
+            <button id="sem_8" class="course">
+                Semester 8
+            </button>
         </div>
         <div id="right_div">
-        <a href="stsDetails.html"><button class="butn">Cousre 1</button></a> 
-        <a href="stsDetails.html"><button class="butn">Course 2</button></a>
-        <a href="stsDetails.html"><button class="butn">Course 3</button></a>
-        <a href="stsDetails.html"><button class="butn">Course 4</button></a>
-        <a href="stsDetails.html"><button class="butn">Course 5</button></a>
-        <a href="stsDetails.html"><button class="butn">Course 6</button></a> 
+        <a href="stsDetails.html"><button class="butn" id="crs_1">Disc Maths </button></a> 
+        <a href="stsDetails.html"><button class="butn" id="crs_2">Calculus</button></a>
+        <a href="stsDetails.html"><button class="butn" id="crs_3">English</button></a>
+        <a href="stsDetails.html"><button class="butn" id="crs_4">Pak Studies</button></a>
+        <a href="stsDetails.html"><button class="butn" id="crs_5">Programming  </button></a>
+        <a href="stsDetails.html"><button class="butn" id="crs_6">Applied Physics</button></a> 
         </div>
     </div>
     <footer class="container-fluid">
@@ -104,5 +105,6 @@
             </div>
           </div> 
     </footer>
+    <script src="enrolledSts.js"></script>
 </body>
 </html>

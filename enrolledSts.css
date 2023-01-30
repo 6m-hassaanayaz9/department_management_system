@@ -8,6 +8,9 @@ a:hover{
 .butn:hover{
     background: linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%);
     color: white;
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2); 
 }
 #heading{
     color: #03A08D;
@@ -37,13 +40,15 @@ a:hover{
     display: inline-block;
     margin-left: 40px;
     width: 600px;
-    height: 412px;
+    height: 440px;
     margin-top: 50px;
     margin-bottom: 70px; 
 }
 #default{
     background: linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%);
-    color: white;    
+    color: white; 
+    text-align: center;
+   
 }
 .course{
     text-align: center;
@@ -53,19 +58,24 @@ a:hover{
     font-family:'Poppins', sans-serif;
     margin-left: 200px;
     margin-bottom: 7px;
+    background-color: white;
+    padding: 10px;
     font-weight: bold;
+    width: 180px;
 }
 .butn{
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
-    padding-right: 45px;
-    padding-left: 45px;
     text-align: center;
     font-family:'Poppins', sans-serif;
     font-weight: bold;
     background-color: white;
     margin-left: 90px;
-    margin-top: 50px;
+    margin-top: 68px;
+    transition: transform .2s;
+    height: 55px;
+    width: 150px;
+    
 }
 
 
