@@ -2,6 +2,7 @@
     padding: 0 !important;
 }
 footer, header{
+    z-index: 10;
     background: linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%);
 }
 .nav-link{
