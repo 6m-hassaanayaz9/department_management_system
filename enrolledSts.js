@@ -184,7 +184,7 @@ f.addEventListener("click",function(){
     d.style.color="black";
     g.style.background="white";
     g.style.color="black";
-    crs1.innerHTML="Inforamtion Security";
+    crs1.innerHTML="Information Security";
     crs2.innerHTML="Engineering Elective - I";
     crs3.innerHTML="Engineering Elective - II";
     crs4.innerHTML="Occupational Health";
@@ -214,5 +214,12 @@ g.addEventListener("click",function(){
     crs3.innerHTML="Internet of Things";
     crs4.innerHTML="MDEE-II";
     crs5.innerHTML="Engineering Electives-III";
-    crs6.innerHTML="Workshop Practice";
+    crs6.innerHTML="Engineering Electives-IV";
+});
+
+var a1=document.getElementById("sem_2_");
+document.getElementById("sem_2").addEventListener("click",function()
+{
+    alert("hi");
+    a1.style.background="linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%)";
 });

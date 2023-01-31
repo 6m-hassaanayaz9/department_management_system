@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="stsDetails.css">
     <link rel="stylesheet" href="enrolledSts.css">
+    <link rel="stylesheet" href="stsDetails.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>CSE Dept Dashboard</title>
 </head>
 <body>
@@ -38,43 +39,76 @@
         <img class="img-fluid" alt="Responsive image" src="img-icon/CSEDept.jpg">
     </div>
     <div class="container-fluid">
-        <p id="notification-banner">Lorem ipsmolestias doloribus adipisci, minima voluptatem asperiores corporis maxime in molestiae inventore distinctio recusandae quae vel porro!</p>
+        <marquee id="notification-banner" behavior="slide" direction="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt commodi inventore ut voluptas repellat veniam repellendus corrupti, reiciendis laboriosam maiores dolorem molestias aliquid necessitatibus quidem, voluptatum vitae animi amet modi?</marquee>
+        <!-- <p id="notification-banner">Lorem ipsmolestias doloribus adipisci, minima voluptatem asperiores corporis maxime in molestiae inventore distinctio recusandae quae vel porro!</p> -->
     </div>
-    <h5 id="heading">STUDENTS ENROLLED BT COURSES</h1>
+    <h2 id="heading">Students Enrolled By Courses</h2>
     <div id="outer_div">
-        <div id="left_div">
-            <button id="default" class="course">
+        <div id="side_div">
+            <button id="default_" class="course_">
                 Semester 1
             </button>
-            <button id="sem_2" class="course">
+            <button id="sem_2_" class="course_">
                 Semester 2
-            </button>
-            <button id="sem_3" class="course">
+            </dbutton>
+            <button id="sem_3_" class="course_">
                 Semester 3
             </button>
-            <button id="sem_4" class="course">
+            <button id="sem_4_" class="course_">
                 Semester 4
             </button>
-            <button id="sem_5" class="course">
+            <button id="sem_5_" class="course_">
                 Semester 5
             </button>
-            <button id="sem_6" class="course">
+            <button id="sem_6_" class="course_">
                 Semester 6
             </button>
-            <button id="sem_7" class="course">
+            <button id="sem_7_" class="course_">
                 Semester 7
             </button>
-            <button id="sem_8" class="course">
+            <button id="sem_8_" class="course_">
                 Semester 8
             </button>
         </div>
-        <div id="right_div">
-        <a href="stsDetails.html"><button class="butn" id="crs_1">Disc Maths </button></a> 
-        <a href="stsDetails.html"><button class="butn" id="crs_2">Calculus</button></a>
-        <a href="stsDetails.html"><button class="butn" id="crs_3">English</button></a>
-        <a href="stsDetails.html"><button class="butn" id="crs_4">Pak Studies</button></a>
-        <a href="stsDetails.html"><button class="butn" id="crs_5">Programming  </button></a>
-        <a href="stsDetails.html"><button class="butn" id="crs_6">Applied Physics</button></a> 
+        <div id="details_div">
+            <label class="info1" for="id">COURSE ID:</label>
+            <label style="font-weight: bold;" for="id_value">03</label>
+            <label class="info2" for="name">COURSE NAME:</label>
+            <label style="font-weight: bold;" for="name_value">WEB ENGINEERING</label>
+            <label class="info5" for="inst_name">INSTRUCTOR NAME:</label>
+            <label style="font-weight: bold;" for="inst_name_value">MA'AM NAIMA</label><br>
+            <br><label class="info3" for="hrs">CREDIT HRS:</label>
+            <label style="font-weight: bold;" for="hrs_value">04</label>
+            <label class="info4" for="totalSts">TOTAL STUDENTS:</label>
+            <label style="font-weight: bold;" for="totalSts_value">50</label><br>
+            <table>
+                <tr>
+                    <th>SR.NO</th>
+                    <th>STUDENT ID</th>
+                    <th>STUDENT NAME</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>359699</td>
+                    <td>Saman Khalid</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>359649</td>
+                    <td>Mishal Tariq</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>359599</td>
+                    <td>Hassaan Ayaz</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>319699</td>
+                    <td>Jawad Ayaz</td>
+                </tr>
+                
+            </table>
         </div>
     </div>
     <footer class="container-fluid">
@@ -104,7 +138,6 @@
                 </ul>
             </div>
           </div> 
-    </footer>
-    <script src="enrolledSts.js"></script>
+    </footer> 
 </body>
 </html>
