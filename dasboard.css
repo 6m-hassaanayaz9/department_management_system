@@ -3,11 +3,13 @@
     color:  #03A08D;
 }
 #update_news, #view_sts, #attendance{
+    
     padding-left: 65px;
     padding-right: 65px;
     padding-top: 15px;
     padding-bottom: 50px;
 }
+
 #admin_menu{
     padding-left: 65px;
     padding-right: 65px;
@@ -96,7 +98,7 @@
     margin-top: 3px;
     margin-bottom: 3px 
 }
-/* #opensidebar:checked ~ #sidebaricon > .spinner.top{
+ #opensidebar:checked ~ #sidebaricon > .spinner.top{
     transform: translateX(135px);
     margin-top: 8px ;
 }
@@ -106,4 +108,4 @@
 }
 #opensidebar:checked ~ #sidebaricon > .spinner.middle{
     opacity: 0px;
-} */
+} 
