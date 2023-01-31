@@ -1,3 +1,6 @@
+body{
+    font-family:'Poppins', sans-serif; 
+}
 
 
 #dept-pic img {
@@ -10,18 +13,7 @@
     height: 390px;
     width: 600px;
 }
-.abc{
-    background-color: white;
-    border-radius: 25px;
-    font-size: large;
-    padding: 5px 18px;
-    margin-right: 22px !important;
-    margin-left: 22px !important
-}
-.abc:hover{
-    background-color: #00d1b8;
-    color: white;
-}
+
 #hod img
 {
     width: 300px;
