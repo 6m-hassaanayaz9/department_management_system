@@ -1,30 +1,34 @@
 const express =require("express")
 const app=express()
-app.use(express.static('public'))
+const path = require('path');
+app.use(express.static(path.join(__dirname,'public')));
 
-app.get('/home.html',(req,res)=>{
-    res.sendFile(__dirname + "/home.html")
+app.get('/views/home.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/home.html")
+    // res.sendFile(__dirname + "/public/home.css")
 })
-app.get('/login.html',(req,res)=>{
-    res.sendFile(__dirname + "/login.html")
+app.get('/views/login.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/login.html")
 })
-app.get('/enrolledSts.html',(req,res)=>{
-    res.sendFile(__dirname + "/enrolledSts.html")
+app.get('/views/enrolledSts.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/enrolledSts.html")
 })
-app.get('/stsDetails.html',(req,res)=>{
-    res.sendFile(__dirname + "/stsDetails.html")
+app.get('/views/stsDetails.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/stsDetails.html")
 })
-app.get('/attendance.html',(req,res)=>{
-    res.sendFile(__dirname + "/attendance.html")
+app.get('/views/attendance.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/attendance.html")
+    res.sendFile(__dirname + "/public/attendance.css")
+
 })
-app.get('/News.html',(req,res)=>{
-    res.sendFile(__dirname + "/News.html")
+app.get('/views/News.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/News.html")
 })
-app.get('/dashboard.html',(req,res)=>{
-    res.sendFile(__dirname + "/dashboard.html")
+app.get('/views/dashboard.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/dashboard.html")
 })
-app.get('/faculty.html',(req,res)=>{
-    res.sendFile(__dirname + "/faculty.html")
+app.get('/views/faculty.html',(req,res)=>{
+    res.sendFile(__dirname + "/views/faculty.html")
 })
 
 
