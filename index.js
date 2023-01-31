@@ -27,7 +27,7 @@ app.get('/views/dashboard.html',(req,res)=>{
     res.sendFile(__dirname + "/views/dashboard.html")
 })
 app.get('/views/faculty.html',(req,res)=>{
-    res.sendFile(__dirname + "/views/faculty1.html")
+    res.sendFile(__dirname + "/views/faculty.html")
 })
 
 app.listen(5500,function(){
