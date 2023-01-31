@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSE Dept Dashboard</title>
-    <link href="/public/header-footer.css" rel="stylesheet">
-    <link href="/public/faculty.css" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/header-footer.css">
+    <link rel="stylesheet" href="/public/faculty.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    </head> 
+    <title>CSE Dept Dashboard</title>
+</head>
 <body>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-sm p-4">
@@ -24,7 +23,7 @@
                         <a href="faculty.html" class="nav-link">Faculty</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about-us" class="nav-link">About Us</a>
+                        <a href="home.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact-us" class="nav-link">Contact Us</a>
@@ -34,18 +33,15 @@
             <button class="btn navbar-btn mx-5">Login</button>
         </nav>
     </header>
-   
-   
     <div class="container-fluid dept-pic">
         <img class="img-fluid" alt="Responsive image" src="/public/img-icon/CSEDept.jpg">
     </div>
     <div class="container-fluid">
-        <p id="notification-banner">No New Notification!</p>
+        <!-- <p id="notification-banner">Lorem ipsmolestias doloribus adipisci, minima voluptatem asperiores corporis maxime in molestiae inventore distinctio recusandae quae vel porro!</p> -->
+        <marquee id="notification-banner" behavior="slide" direction="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt commodi inventore ut voluptas repellat veniam repellendus corrupti, reiciendis laboriosam maiores dolorem molestias aliquid necessitatibus quidem, voluptatum vitae animi amet modi?</marquee>
     </div>
-<!--Main Body-->
-
+    <h2 class="text-center" id="heading" style="color: #03A08D ;"><strong>MCS Faculty<br></strong></h2>
     <div class="text-center container" id="main">
-        <h3 class="text-center" style="color: #03A08D ;"><u><strong>MCS Faculty</strong></u></h3>
         <center>
         <div id="hod"><br><br>
             <img src="/public/img-icon/male.jpg">
@@ -135,37 +131,33 @@
         </div>
     </div>
 <br><br>
-<footer class="container-fluid">
-    <div class="row footer" id="contact-us">
-        <div class="col-sm-3 d-flex">
-            <ul class="ms-auto list-unstyled" id="contact-us-list">
-                <li id="footer-list-head">Contact Us</li>
-                <li>Support: 123-45678 </li>
-                <li>Main Office: 123-45678 </li>
-                <li>Coordinator: 123-45678 </li>
-            </ul>
-        </div>
-        <div class="col-sm-2">
-            <ul class="ms-auto list-unstyled" id="quick-link-list">
-                <li id="footer-list-head">Quick Links</li>
-                <a href="" class="footer-link">Help</a>
-                <br>
-                <a href="" class="footer-link">About Us</a>
-            </ul>
-        </div>
-        <div class="col-sm-7">
-            <ul class="ms-auto list-unstyled" id="mcs-link-list">
-                <li id="footer-list-head">Military College of Signals, Rawalpindi</li>
-                <li>Location: H3H7+275, Adiala Road, Lalazar, Rawalpindi, Punjab 46000</li>
-                <li>Founded: 1947</li>
-                <li id="footer-right-align">© MCS ALL RIGHTS RESERVED</li>
-            </ul>
-        </div>
-      </div> 
-</footer>
-
-
+    <footer class="container-fluid">
+        <div class="row footer" id="contact-us">
+            <div class="col-sm-3 d-flex">
+                <ul class="ms-auto list-unstyled" id="contact-us-list">
+                    <li id="footer-list-head">Contact Us</li>
+                    <li>Support: 123-45678 </li>
+                    <li>Main Office: 123-45678 </li>
+                    <li>Coordinator: 123-45678 </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="ms-auto list-unstyled" id="quick-link-list">
+                    <li id="footer-list-head">Quick Links</li>
+                    <a href="" class="footer-link">Help</a>
+                    <br>
+                    <a href="" class="footer-link">About Us</a>
+                </ul>
+            </div>
+            <div class="col-sm-7">
+                <ul class="ms-auto list-unstyled" id="mcs-link-list">
+                    <li id="footer-list-head">Military College of Signals, Rawalpindi</li>
+                    <li>Location: H3H7+275, Adiala Road, Lalazar, Rawalpindi, Punjab 46000</li>
+                    <li>Founded: 1947</li>
+                    <li id="footer-right-align">© MCS ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+          </div> 
+    </footer> 
 </body>
-
-
 </html>
