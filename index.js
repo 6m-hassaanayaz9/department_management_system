@@ -1,11 +1,10 @@
 const express =require("express")
 const app=express()
 const path = require('path');
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'/public')));
 
 app.get('/views/home.html',(req,res)=>{
     res.sendFile(__dirname + "/views/home.html")
-    // res.sendFile(__dirname + "/public/home.css")
 })
 app.get('/views/login.html',(req,res)=>{
     res.sendFile(__dirname + "/views/login.html")
@@ -19,7 +18,6 @@ app.get('/views/stsDetails.html',(req,res)=>{
 app.get('/views/attendance.html',(req,res)=>{
     res.sendFile(__dirname + "/views/attendance.html")
     res.sendFile(__dirname + "/public/attendance.css")
-
 })
 app.get('/views/News.html',(req,res)=>{
     res.sendFile(__dirname + "/views/News.html")
