@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/public/dasboard.css">
     <link rel="stylesheet" href="/public/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Admin dasboard</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="login.html"><button class="btn navbar-btn mx-5" id="nav-login">Login</button></a>
+            <a href="home.html"><button class="btn navbar-btn mx-5" id="nav-login">Logout</button></a>
         </nav>
     </header>
 <!-- header finished -->    
@@ -65,7 +66,7 @@
         <h2 id="welcome-heading">Welcome User</h2>
         <div class="row d-flex flex-row justify-content-center" id="admin-menu">
             <div class="col-sm-4">
-                <div class="container update-news welcome">
+                <div class="container update-news welcome" id="update-news">
                     <img class="update-news-img" src="/public/img-icon/g.png">
                     <h4 class="update-news-text">Update News</h4>
                 </div>
@@ -164,6 +165,7 @@
             </div>
           </div> 
     </footer>
+    <script src="/dashboard.js"></script>
 </body>
 
 </html>

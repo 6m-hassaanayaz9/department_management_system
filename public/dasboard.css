@@ -4,7 +4,7 @@
     margin-top: 40px;
 }
 .welcome:hover{
-    background: linear-gradient(91.8deg, #03A08D 28.11%, rgba(0, 0, 0, 0.86) 121.15%);
+    background: #03A08D;
     border: none;
 }
 #admin-menu{
@@ -27,6 +27,11 @@
     width: 38%;
     padding-top: 30px;
 }
+/* .update-news-img{
+    width: 38%;
+    padding-top: 30px;
+    url:"/public/img-icon/g.png";
+} */
 .update-news-text, .view-sts-text, .attendance-text {
     padding-top: 15px;
     padding-bottom: 25px;
@@ -114,3 +119,4 @@
 #opensidebar:checked ~ #sidebaricon > .spinner.middle{
     opacity: 0px;
 } 
+
