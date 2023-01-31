@@ -1,11 +1,13 @@
 body{
     font-family:'Poppins', sans-serif; 
 }
-
-
-#dept-pic img {
-    background-size: cover;
-    width: 100%;
+#heading{
+    color: #03A08D;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 50px;
 }
 
 #hod{
@@ -95,11 +97,5 @@ body{
     margin: 5% auto 0; 
     text-align: center;
 }
-#pic{
-    width: 1265px;
-}
-#notification-banner{
-    background-color: red;
-    text-align: center;
-    color: white;
-}
+
+

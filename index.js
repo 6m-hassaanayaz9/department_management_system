@@ -3,6 +3,7 @@ const app=express()
 const path = require('path');
 app.use(express.static(path.join(__dirname,'/public')));
 
+
 app.get('/views/home.html',(req,res)=>{
     res.sendFile(__dirname + "/views/home.html")
 })
@@ -26,10 +27,8 @@ app.get('/views/dashboard.html',(req,res)=>{
     res.sendFile(__dirname + "/views/dashboard.html")
 })
 app.get('/views/faculty.html',(req,res)=>{
-    res.sendFile(__dirname + "/views/faculty.html")
+    res.sendFile(__dirname + "/views/faculty1.html")
 })
-
-
 
 app.listen(5500,function(){
     console.log(`Express listening to port 5500`)
