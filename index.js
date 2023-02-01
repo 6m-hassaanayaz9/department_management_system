@@ -9,6 +9,8 @@ app.set("view engine","ejs");
 app.use(express.static(path.join(__dirname, '/public')));
 var totalStds;
 var totalFac;
+var semesterStds;
+var allStds;
     MongoClient.connect('mongodb://0.0.0.0:27017/',{useNewUrlParser:true , useUnifiedTopology: true},function(error,result){
         if (error )throw error
         database=result.db("CSE_Management")
@@ -27,6 +29,19 @@ var totalFac;
             console.log(count);
             totalFac=count;            
         })
+        
+        database.collection("students").find({semester:"Semester 1"}).toArray(function(error,result){
+            if(error) throw error;
+            // console.log(result);
+            allStds=result;
+            // result.forEach(function(students) {
+            //     stdsID.push(students);
+            //     // let idArray=stdsID.toArray();
+            //     // console.log(stdsId);
+            // });   
+            console.log(allStds);   
+
+        });    
     
     })
 
@@ -47,7 +62,7 @@ app.get('/enrolledSts', (req, res) => {
 })
 // app.get('/views/stsDetails.html', (req, res) => {
 app.get('/stsDetails', (req, res) => {
-    res.render("stsDetails")
+    res.render("stsDetails",{allStds:allStds})
     // res.sendFile(__dirname + "/views/stsDetails.html")
 })
 // app.get('/views/attendance.html', (req, res) => {

@@ -83,11 +83,16 @@
             <label style="font-weight: bold;" for="totalSts_value">50</label><br>
             <table>
                 <tr>
-                    <th>SR.NO</th>
                     <th>STUDENT ID</th>
                     <th>STUDENT NAME</th>
+                    <th>CGPA</th>
                 </tr>
-                <tr>
+                <% if(allStds.length>0){ %>
+                    <%   allStds.forEach(allStds =>{ %>
+                           <tr><td><%= allStds.std_id %></td><td><%= allStds.name%></td><td><%= allStds.cgpa%></td></tr>
+                     <%  }) %> 
+                <%}%>
+                <!-- <tr>
                     <td>01</td>
                     <td>359699</td>
                     <td>Saman Khalid</td>
@@ -106,9 +111,17 @@
                     <td>04</td>
                     <td>319699</td>
                     <td>Jawad Ayaz</td>
-                </tr>
+                </tr> -->
                 
             </table>
+            <div>
+                <!-- <% if(allStds.length>0){ %>
+                 <%   allStds.forEach(allStds =>{ %>
+                        <p><%= allStds.std_id %></p>
+                  <%  }) %> 
+                <%}%> -->
+       
+            </div>
         </div>
     </div>
     <footer class="container-fluid">
