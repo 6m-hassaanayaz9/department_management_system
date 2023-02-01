@@ -11,6 +11,7 @@ var totalStds;
 var totalFac;
 var semesterStds;
 var allStds;
+var allInsc;
     MongoClient.connect('mongodb://0.0.0.0:27017/',{useNewUrlParser:true , useUnifiedTopology: true},function(error,result){
         if (error )throw error
         database=result.db("CSE_Management")
@@ -33,15 +34,16 @@ var allStds;
         database.collection("students").find({semester:"Semester 1"}).toArray(function(error,result){
             if(error) throw error;
             // console.log(result);
-            allStds=result;
-            // result.forEach(function(students) {
-            //     stdsID.push(students);
-            //     // let idArray=stdsID.toArray();
-            //     // console.log(stdsId);
-            // });   
+            allStds=result;  
             console.log(allStds);   
+        });
+        
+        database.collection("instructors").find({}).toArray(function(error,result){
+            if(error) throw error;
+            allInsc=result;
+            console.log(allInsc);
 
-        });    
+        });
     
     })
 
@@ -83,7 +85,7 @@ app.get('/dashboard', (req, res) => {
 })
 // app.get('/views/faculty.html', (req, res) => {
 app.get('/faculty', (req, res) => {
-    res.render("faculty")
+    res.render("faculty",{allInsc:allInsc})
     // res.sendFile(__dirname + "/views/faculty.html")
 })
 
