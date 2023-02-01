@@ -45,16 +45,22 @@
             <div class="loginPortal container-fluid d-flex flex-column align-items-center py-3">
                 <h3 id="login-heading">Log in to CSE Dashboard</h3>
                 <div class="p-2 d-flex flex-column">
-                    <label for="username">Username</label>
-                    <input type="text field" name="username">
+                    <label  for="username">Username</label>
+                    <input id="usn" type="text field" name="username">
                     <div id="usernameErr"></div>
                 </div>
                 <div class="p-2 d-flex flex-column">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input id="pass" type="password" name="password">
                     <div id="passwordErr"></div>
                 </div>
                 <input class="py-1 px-3 btn" id="submit-btn" type="submit" value="Submit">
+                <%var bts=document.getElementById("submit-btn") %>
+                <%bts.onclick=function(){ %>
+                    <%if(getElementById("usn").value()==admin.admin_username) && getElementById("pass").value()==admin.password){%>
+                        
+                    <%}%>   
+                <% } %>
             </div>
         </form>
     </div>

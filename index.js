@@ -1,5 +1,6 @@
 const { count } = require("console");
-const express = require("express")
+const express = require("express");
+const { Admin } = require("mongodb");
 const app = express()
 const path = require('path');
 const MongoClient=require('mongodb').MongoClient
@@ -12,13 +13,15 @@ var totalFac;
 var semesterStds;
 var allStds;
 var allInsc;
+var admin;
     MongoClient.connect('mongodb://0.0.0.0:27017/',{useNewUrlParser:true , useUnifiedTopology: true},function(error,result){
         if (error )throw error
         database=result.db("CSE_Management")
         console.log("CONNECTION")
         database.collection("admin").findOne({},function(error,result){
             if (error )throw error;
-            console.log(result);
+            admin=result
+            console.log(admin);
         })
         let stds=database.collection("students");
         stds.count().then((count)=>{
@@ -54,7 +57,7 @@ app.get('/home', (req, res) => {
 
 // app.get('/views/login.html', (req, res) => {
 app.get('/login', (req, res) => {
-    res.render("login")
+    res.render("login",{admin:admin})
     // res.sendFile(__dirname + "/views/login.html")
 })
 // app.get('/views/enrolledSts.html', (req, res) => {
