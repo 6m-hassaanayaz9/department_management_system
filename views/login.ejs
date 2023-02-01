@@ -58,7 +58,8 @@
                 <%var bts=document.getElementById("submit-btn") %>
                 <%bts.onclick=function(){ %>
                     <%if(getElementById("usn").value()==admin.admin_username) && getElementById("pass").value()==admin.password){%>
-                        
+                        <!-- <%res.render("/views/dashboard.ejs");%>
+                        <%localstorage.setItem("admin")%> -->
                     <%}%>   
                 <% } %>
             </div>
